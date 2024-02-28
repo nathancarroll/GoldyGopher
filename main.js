@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log('main.js loaded');
 
-    document.getElementById("startStop").addEventListener("click", function(){
-        let lowerBound = document.getElementById("lowerBound").value || 0;
-        let upperBound = document.getElementById("upperBound").value || 100;
+    // Display the numbers and Goldy/Gopher replacements on the DOM
+    function start(){
+        let lowerBound = parseInt(document.getElementById("lowerBound").value) || 0;
+        let upperBound = parseInt(document.getElementById("upperBound").value) || 100;
         console.log('click start');
         console.log(lowerBound);
         console.log(upperBound)
@@ -18,12 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 output = i;
             }
-            console.log('output', output);  
-            //document.getElementById("output").innerText = output;
+            document.getElementById("output").innerHTML += output + "<br/>";
         }
-    });
+    }
 
-    document.getElementById("reset").addEventListener("click", function(){
-        console.log('click reset');
-    });
+    // Reset the display area and lower/upper bound inputs
+    function reset(){
+        document.getElementById("lowerBound").value = 0;
+        document.getElementById("upperBound").value = 100;
+        document.getElementById("output").innerText = "";
+    };
+
+    // Initialize click handlers
+    document.getElementById("start").addEventListener("click", start);
+    document.getElementById("reset").addEventListener("click", reset);
   });
