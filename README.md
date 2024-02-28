@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a web application that allows the user to input upper and lower bounds, and then outputs all numbers within those bounds--except multiples of 3 are replaced with "Goldy," multiples of 7 are replaced with "Gopher," and multiples of both 7 and 3 (aka multiples of 21) are replaced with "Goldy Gopher."
+This is a web application that allows the user to input numerical upper and lower bounds, and then outputs all numbers within those bounds--except multiples of 3 are replaced with "Goldy," multiples of 7 are replaced with "Gopher," and multiples of both 7 and 3 (aka multiples of 21) are replaced with "Goldy Gopher."
 
 ## How to Run
 
