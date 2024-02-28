@@ -9,13 +9,16 @@
 <body>
     <div class="bound"></div>
         <label for="lowerBound">Lower Bound:</label>
-        <input type="number" placeholder="0" name="lowerBound"/>
+        <input type="number" value="0" id="lowerBound"/>
     </div>
     <div class="bound"></div>
         <label for="upperBound">Upper Bound</label>
-        <input type="number" placeholder="100" name="upperBound"/>
+        <input type="number" value="100" id="upperBound"/>
     </div>
-    <button name="startStop">START</button>
-    <button name="reset">RESET</button>
+    <button id="startStop">START</button>
+    <button id="reset">RESET</button>
+    <div class="outputBox">
+        <p id="output"></p>
+    </div>
 </body>
 </html>
